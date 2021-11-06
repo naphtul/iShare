@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iShare</string>
+    <string name="action_settings">אפשרויות</string>
+    <string name="btn_logout_from_google">התנתק מגוגל</string>
+    <string name="btn_revoke_access">בטל הרשאות גישה</string>
+    <string name="browse_deals">הצג דילים</string>
+    <string name="clear_cache_menu">נקה זכרון מטמון</string>
+    <string name="clear_cache_complete_toast">זכרון מטמון נוקה</string>
+    <string name="imageview_description">צלמית תמונה</string>
+    <string name="no_network_connection_toast">אין חיבור רשת</string>
+    <string name="downloading_picture">מוריד תמונה...</string>
+
+    <string-array name="categories">
+        <item>הכל</item>
+        <item>ביגוד</item>
+        <item>אוכל</item>
+        <item>טיפוח</item>
+        <item>שירותים</item>
+        <item>ילדים</item>
+        <item>חופשות</item>
+        <item>גאדג\'טים</item>
+        <item>בית</item>
+        <item>אחר</item>
+    </string-array>
+
+    <string-array name="proximity">
+        <item>הכל</item>
+        <item>10</item>
+        <item>5</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="proximity_prompt">דילים בטווח של ק"מ</string>
+    <string name="categories_prompt">בחר קטגוריה</string>
+    <string name="rate">דרג את הדיל</string>
+    <string name="title_activity_buy_picture">קנה תמונה</string>
+    <string name="buy">קנה</string>
+	<string name="payment_not_confirmed">תשלום לא אושר. הורדה לא מאופשרת.</string>
+	<string name="waiting_for_payment">אנא המתן לאישור תשלום.</string>
+	<string name="payment_confirmed">התשלום אושר. לחץ להורדה.</string>
+	<string name="download">הורד</string>
+	<string name="take_picture">צלם תמונה</string>
+	<string name="share_deal">שתף דיל</string>
+	<string name="share_with_friends">שתף עם חברים</string>
+	<string name="select_picture">בחר תמונה מהגלריה</string>
+	<string name="click_back">לחץ על כפתור אחורה לחזור</string>
+	<string name="business_address">כתובת העסק:</string>
+	<string name="describe_deal">תאר דיל:</string>
+	<string name="labelBusiness_name">שם העסק:</string>
+	<string name="no_deals">אין דילים לפי תוצאות החיפוש. לחץ אחורה לחזור.</string>
+	<string name="no_location">מיקומך לא אותר אוטומטית.</string>
+	<string name="average_rating">דירוג ממוצע:</string>
+	<string name="natigate_to">הוראות הגעה לבית העסק</string>
+	<string name="verify_address_title">וודא כתובת העסק</string>
+	<string name="verify_address">האם אתה בטוח שזו כתובת בית העסק?</string>
+	<string name="ok">המשך</string>
+	<string name="cancel">בטל</string>
+	<string name="search">חפש</string>
+	<string name="show_search_options">אפשרויות חיפוש</string>
+	<string name="hide_search_options">הסתר אפשרויות חיפוש</string>
+	<string name="keyword_search">חפש לפי מילת מפתח</string>
+	<string name="discount_prompt">אחוז הנחה</string>
+	<string name="friends_deals">רק דילים של חברים שלך</string>
+	<string name="set_expiration">תאריך תפוגת דיל</string>
+	<string name="distance_unit">ק"מ</string>
+	<string name="not_logged_in_fb">אינך מחובר לפייסבוק</string>
+	<string name="person_info_null">אין מידע על המשתמש המחובר</string>
+	<string name="not_connected">אינך מחובר לאינטרנט. אנא בדוק את החיבור ונסה שנית.</string>
+	<string name="mandatory_fields_missing">שדות חובה לא מולאו.</string>
+	<string name="picture_selected">תמונה שנבחרה להעלאה:</string>
+	<string name="picture_not_selected">לא נבחרה תמונה תקינה להעלאה.</string>
+	<string name="sharing_started">השיתוף התחיל...</string>
+	<string name="source_not_exist">התמונה שנבחרה אינה זמינה.</string>
+	<string name="sharing_complete">השיתוף הסתיים בהצלחה</string>
+	<string name="sharing_complete_errors">השיתוף הסתיים עם שגיאות</string>
+	<string name="sharing_deal">משתף דיל...</string>
+		
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iShare</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="browse_deals">Browse Deals</string>
+    <string name="clear_cache_menu">Clear Cache</string>
+    <string name="clear_cache_complete_toast">Cache has been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    <string name="downloading_picture">Downloading Picture...</string>
+
+    <string-array name="categories">
+        <item>All</item>
+        <item>Clothing</item>
+        <item>Dining</item>
+        <item>Beauty</item>
+        <item>Services</item>
+        <item>Kids</item>
+        <item>Travel</item>
+        <item>Gadgets</item>
+        <item>Home</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="proximity">
+        <item>All</item>
+        <item>10</item>
+        <item>5</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="proximity_prompt">Deals within radius of</string>
+    <string name="categories_prompt">Select a category</string>
+    <string name="rate">Rate this deal</string>
+    <string name="title_activity_buy_picture">Buy Picture</string>
+    <string name="buy">Buy</string>
+	<string name="payment_not_confirmed">Payment not confirmed. Download is disabled.</string>
+	<string name="waiting_for_payment">Please wait for payment confirmation.</string>
+	<string name="payment_confirmed">Payment confirmed. Press Download to retrive your picture.</string>
+	<string name="download">Download</string>
+	<string name="take_picture">Take a photo</string>
+	<string name="share_deal">Share a Deal</string>
+	<string name="share_with_friends">Share with friends</string>
+	<string name="select_picture">Select a photo</string>
+	<string name="click_back">Click the Back key to continue.</string>
+	<string name="business_address">Business Address:</string>
+	<string name="describe_deal">Describe Deal:</string>
+	<string name="labelBusiness_name">Business name:</string>
+	<string name="no_deals">There are no deals in this category. Press the Back button to return.</string>
+	<string name="no_location">Location was not detected.</string>
+	<string name="average_rating">Average Rating: </string>
+	<string name="natigate_to">Directions to Business</string>
+	<string name="verify_address_title">Verify Business address</string>
+	<string name="verify_address">Are you sure the Business address is valid?</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="search">Search</string>
+	<string name="show_search_options">Show Browse Options</string>
+	<string name="hide_search_options">Hide Browse Options</string>
+	<string name="keyword_search">Search by keyword</string>
+	<string name="discount_prompt">Enter % discount</string>
+	<string name="friends_deals">Only your friend\'s deals</string>
+	<string name="set_expiration">Set Deal Expiration</string>
+	<string name="distance_unit">km</string>
+	<string name="not_logged_in_fb">You are not logged in to Facebook</string>
+	<string name="person_info_null">Person information is null</string>
+	<string name="not_connected">You are not connected to the Internet. Please check your connection and try again.</string>
+	<string name="mandatory_fields_missing">Mandatory fields were not filled.</string>
+	<string name="picture_selected">Picture was selected for sharing:</string>
+	<string name="picture_not_selected">No valid picture was selected.</string>
+	<string name="sharing_started">Sharing started...</string>
+	<string name="source_not_exist">Source picture doesn\'t exist.</string>
+	<string name="sharing_complete">Deal Sharing completed successfully.</string>
+	<string name="sharing_complete_errors">Deal Sharing completed with errors.</string>
+	<string name="sharing_deal">Sharing Deal...</string>
+		
+</resources>

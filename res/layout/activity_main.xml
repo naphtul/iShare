@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="16dp" >
+
+	<LinearLayout
+		android:id="@+id/llProfile"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:orientation="horizontal"
+		android:weightSum="3"
+		android:visibility="gone">
+
+		<ImageView
+		    android:id="@+id/imgProfilePic"
+		    android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:contentDescription="@string/imageview_description" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:orientation="vertical"
+			android:layout_weight="2" >
+
+			<TextView
+				android:id="@+id/txtName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:textSize="20sp" />
+
+			<TextView
+				android:id="@+id/txtEmail"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:textSize="18sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<com.google.android.gms.common.SignInButton
+		android:id="@+id/btn_sign_in"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"/>
+
+	<Button
+		android:id="@+id/btn_sign_out"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/btn_logout_from_google"
+		android:visibility="gone"
+		android:layout_marginBottom="10dp"/>
+<!-- 
+	<Button
+		android:id="@+id/btn_revoke_access"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/btn_revoke_access"
+		android:visibility="gone" />
+ -->
+	<com.facebook.widget.LoginButton
+		android:id="@+id/fb_login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        facebook:confirm_logout="false"
+        facebook:fetch_user_info="true" />	    
+
+	<LinearLayout
+	    android:id="@+id/llSignedIn"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="20dp"
+	    android:orientation="vertical"
+	    android:visibility="gone"
+	    android:weightSum="4" >
+	
+		<Button
+			android:id="@+id/button_share_deal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/share_deal" />
+
+		<Button
+			android:id="@+id/button_show_search_options"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/show_search_options" />
+
+		<LinearLayout 
+		    android:id="@+id/ll_search_options"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:visibility="gone" >"
+			<EditText
+				android:id="@+id/edtKeyword"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:inputType="text"
+			    android:hint="@string/keyword_search" />
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:weightSum="4" >
+			    <TextView
+			        android:id="@+id/labelProximity"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/proximity_prompt"
+			        android:textSize="20sp"
+			        android:layout_weight="3" />	
+				<Spinner
+				    android:id="@+id/proximity_spinner"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:entries="@array/proximity"
+				    android:prompt="@string/proximity_prompt"
+				    android:layout_weight="1" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:weightSum="3" >
+				<TextView
+			        android:id="@+id/labelCategory1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/categories_prompt"
+			        android:textSize="20sp"
+			        android:layout_weight="2" />	
+				<Spinner
+				    android:id="@+id/categories_spinner"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:entries="@array/categories"
+				    android:prompt="@string/categories_prompt"
+				    android:layout_weight="1" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:weightSum="3" >
+				<TextView
+			        android:id="@+id/labelDiscount"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/discount_prompt"
+			        android:textSize="20sp"
+			        android:layout_weight="2" />	
+			    <EditText
+			        android:id="@+id/edtDiscount"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:inputType="text"
+				    android:layout_weight="1" />
+			</LinearLayout>
+
+		</LinearLayout>
+			
+		<Button
+			android:id="@+id/button_browse_deals"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/browse_deals" />
+			
+	</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

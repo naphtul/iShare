@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/labelDescription"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/describe_deal"
+	        android:layout_gravity="center"
+	        android:textSize="20sp" />
+	    <EditText
+	        android:id="@+id/deal_description"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="text" />
+	    <LinearLayout 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:orientation="horizontal"
+	    	android:weightSum="2" >
+			<Button
+			    android:id="@+id/selectImageButton"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/select_picture" />
+			<Button 
+			    android:id="@+id/takePictureButton"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:text="@string/take_picture"
+			    android:layout_weight="1"
+			    android:onClick="dispatchTakePictureIntent" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:weightSum="3" >
+			<TextView
+		        android:id="@+id/labelCategory"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="@string/categories_prompt"
+		        android:textSize="20sp"
+		        android:layout_weight="2" />	
+			<Spinner
+			    android:id="@id/categories_spinner"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:entries="@array/categories"
+			    android:prompt="@string/categories_prompt"
+			    android:layout_weight="1" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:weightSum="3" >
+			<TextView
+		        android:id="@id/labelDiscount"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="@string/discount_prompt"
+		        android:textSize="20sp"
+		        android:layout_weight="2" />	
+		    <EditText
+		        android:id="@id/edtDiscount"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:inputType="number"
+			    android:layout_weight="1" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:weightSum="3" >
+			<TextView
+		        android:id="@+id/labelExpiration"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="@string/set_expiration"
+		        android:textSize="20sp"
+		        android:layout_weight="2" />	
+		    <EditText
+		        android:id="@+id/edtExpiration"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:inputType="date"
+			    android:layout_weight="1" />
+		</LinearLayout>
+		<TextView
+	        android:id="@+id/labelBusiness"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/labelBusiness_name"
+	        android:textSize="20sp" />
+	    <EditText
+	        android:id="@+id/business_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="text" />
+	    <TextView
+	        android:id="@+id/labelAddress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/business_address"
+	        android:textSize="20sp" />
+	    <EditText
+	        android:id="@+id/address"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPostalAddress" />
+	    <Button 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/share_deal"
+		    android:id="@id/button_share_deal" />
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:text=""
+		    android:id="@+id/messageText"
+		    android:textStyle="bold" />
+	</LinearLayout>
+</ScrollView>

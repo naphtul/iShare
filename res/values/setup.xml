@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="album_name" translatable="false">iShare</string>
+    <string name="baseServerName" translatable="false">http://omw-naphtul.rhcloud.com/</string>
+    <string name="app_id" translatable="false">1400126426968468</string>
+
+</resources>
